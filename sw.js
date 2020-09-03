@@ -1,5 +1,5 @@
+self.importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.1.0/workbox-sw.js');
 self.importScripts('https://gitbu.github.io/pwa-learn/data/games.js');
-
 // Files to cache
 var cacheName = 'js13kPWA-v1';
 var appShellFiles = [
