@@ -1,4 +1,4 @@
-self.importScripts('./data/games.js');
+self.importScripts('https://gitbu.github.io/pwa-learn/data/games.js');
 
 // Files to cache
 var cacheName = 'js13kPWA-v1';
