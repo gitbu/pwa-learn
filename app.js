@@ -26,7 +26,6 @@ document.getElementById('content').innerHTML = content;
 
 // Registering Service Worker
 if('serviceWorker' in navigator) {
-	debugger
 	navigator.serviceWorker.register('./sw.js');
 };
 
