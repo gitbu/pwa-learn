@@ -29,6 +29,11 @@
 </footer>
 <script>
 	console.log('dom render end')
+	setTimeout(() => {
+		content = document.querySelector('#content');
+		content.textContent = 'hello world';
+		console.log('async content');
+	}, 0)
 </script>
 </body>
 </html>
