@@ -21,7 +21,6 @@ var appShellFiles = [
   '/pwa-learn/icons/icon-256.png',
   '/pwa-learn/icons/icon-512.png'
 ];
-console.log('service worker start')
 var gamesImages = [];
 for(var i=0; i<games.length; i++) {
   gamesImages.push('data/img/'+games[i].slug+'.jpg');
@@ -38,6 +37,11 @@ self.addEventListener('install', function(e) {
     })
   );
 });
+
+self.addEventListener('activate', function(e) {
+  console.log('service worker start')
+})
+
 
 // Fetching content using Service Worker
 self.addEventListener('fetch', function(e) {
