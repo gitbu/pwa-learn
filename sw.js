@@ -40,6 +40,7 @@ self.addEventListener('install', function(e) {
 
 self.addEventListener('activate', function(e) {
   console.log('service worker start')
+  e.waitUntil(Promise.resolve())
 })
 
 
