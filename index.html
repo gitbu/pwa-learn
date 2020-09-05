@@ -11,6 +11,9 @@
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" href="style.css">
 	<link rel="manifest" href="js13kpwa.webmanifest">
+	<script>
+		console.log('main html start')
+	</script>
 	<script src="data/games.js" defer></script>
 	<script src="app.js" defer></script>
 </head>
@@ -35,7 +38,7 @@
 		test.textContent = 'hello world';
 		console.log('async test');
 	}, 0)
-	fetch('//www.mockhttp.cn/mock/test/a/b').then(resp => resp.json()).then(resp => console.log('resp:', resp))
+fetch('http://localhost:3000/posts').then(resp => resp.json()).then(resp => console.log('resp:', resp))
 </script>
 </body>
 </html>

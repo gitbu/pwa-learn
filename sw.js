@@ -3,7 +3,7 @@ self.importScripts('data/games.js');
 // Files to cache
 var cacheName = 'js13kPWA-v1';
 var appShellFiles = [
-  '/pwa-learn/index.html',
+  // '/pwa-learn/index.html',
   '/pwa-learn/app.js',
   '/pwa-learn/style.css',
   '/pwa-learn/fonts/graduate.eot',
@@ -21,6 +21,7 @@ var appShellFiles = [
   '/pwa-learn/icons/icon-256.png',
   '/pwa-learn/icons/icon-512.png'
 ];
+console.log('service worker start')
 var gamesImages = [];
 for(var i=0; i<games.length; i++) {
   gamesImages.push('data/img/'+games[i].slug+'.jpg');
