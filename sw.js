@@ -39,7 +39,7 @@ self.addEventListener('install', function(e) {
 });
 
 self.addEventListener('activate', function(e) {
-  console.log('----------start----------')
+  console.log('----------startaaa----------')
   e.waitUntil(Promise.resolve())
 })
 
